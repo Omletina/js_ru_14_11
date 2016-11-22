@@ -3,6 +3,13 @@ import Comment from './Comment'
 import toggleOpen from '../decorators/toggleOpen'
 
 class CommentList extends Component {
+    
+    static propTypes = {
+        comments: React.PropTypes.array.isRequired,
+        isOpen: React.PropTypes.bool,
+        toggleOpen: React.PropTypes.func
+    };
+
     render() {
         return (
             <div>
@@ -25,5 +32,7 @@ class CommentList extends Component {
         return <ul>{commentItems}</ul>
     }
 }
+
+
 
 export default toggleOpen(CommentList)
