@@ -14,16 +14,16 @@ function ArticleList(props) {
 ArticleList.propTypes = {
     articles: React.PropTypes.array.isRequired,
     openAccordion: React.PropTypes.func.isRequired,
-    openArticleId: React.PropTypes.string
+    openItemId: React.PropTypes.string
 }
 
 function getBodyArticle(props) {
-    const { articles, openArticleId, openAccordion } = props;
+    const { articles, openItemId, openAccordion } = props;
     return articles.map(article => (
         <li key = {article.id}>
             <Article
                 article = {article}
-                isOpen = {article.id == openArticleId}
+                isOpen = {article.id == openItemId}
                 toggleOpen = {openAccordion(article.id)}
             />
         </li>

@@ -3,7 +3,7 @@ import React from 'react'
 export default (Component) => class Accordion extends React.Component {
     state = {
         //не привязывайся к названиям сущностей в декораторах, вся их суть в том, чтобы использовать с разными компонентами и данными. Сделай openItemId
-        openArticleId: null
+        openItemId: null
     }
 
     render() {
@@ -13,7 +13,7 @@ export default (Component) => class Accordion extends React.Component {
 
     openAccordion = id => ev => {
         this.setState({
-            openArticleId: (this.state.openArticleId == id) ? null : id
+            openItemId: (this.state.openItemId == id) ? null : id
         })
     }
 
