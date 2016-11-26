@@ -54,6 +54,7 @@ class DataPicker extends React.Component {
     return (
       <div className="RangeExample">
         <DayPicker
+          style={{'width': 260 +'px'}}
           ref="daypicker"
           numberOfMonths={ 1 }
           selectedDays={ day => DateUtils.isDayInRange(day, { from, to }) }

@@ -11,11 +11,11 @@ class Article extends Component {
 */
 
     componentWillUpdate() {
-        console.log('---', 'updating Article')
+        // console.log('---', 'updating Article')
     }
 
     componentDidUpdate() {
-        console.log('---', findDOMNode(this.refs.comments))
+        // console.log('---', findDOMNode(this.refs.comments))
     }
 
     render() {
@@ -35,7 +35,7 @@ class Article extends Component {
         return (
             <div>
                 <p>{article.text}</p>
-                <CommentList comments = {article.comments} ref = "comments" />
+                <CommentList comments = {article.comments} />
             </div>
         )
     }

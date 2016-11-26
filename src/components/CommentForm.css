@@ -1,0 +1,21 @@
+.comment-form {
+	margin: 20px 0 40px;
+}
+.comment-form label { 
+	display: block;
+}
+.comment-form input, 
+.comment-form textarea { 
+	width: 300px; 
+	margin-bottom: 15px;
+	padding: 5px 10px;
+	box-sizing:border-box;
+}
+.comment-form textarea { 
+	height: 50px; 
+	resize:vertical;
+}
+.comment-form button { 
+	padding: 3px 10px;
+	cursor: pointer;
+}
