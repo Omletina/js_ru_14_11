@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import ArticleList from './ArticleList'
+import DataPicker from './DataPicker'
 import Select from 'react-select'
 import Chart from './Chart'
 import 'react-select/dist/react-select.css'
@@ -22,6 +23,7 @@ class App extends Component {
             <div>
                 <Chart />
                 <ArticleList articles={this.props.articles} />
+                <DataPicker />
                 <Select options = {options} value = {this.state.selected} onChange = {this.handleChange} multi = {true}/>
             </div>
         )
