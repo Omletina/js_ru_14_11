@@ -5,7 +5,7 @@ require("../components/CommentForm.css");
 class CommentForm extends Component {
 
 
-
+//значения полей должны жить в state
   render() {
 
     return (
