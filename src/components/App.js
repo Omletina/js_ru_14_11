@@ -1,10 +1,9 @@
 import React, { Component, PropTypes } from 'react'
 import ArticleList from './ArticleList'
-import Select from 'react-select'
 import Chart from './Chart'
 import DateRange from './DateRange'
 import Counter from './Counter'
-import 'react-select/dist/react-select.css'
+import SelectFilter from './SelectFilter'
 
 class App extends Component {
 
@@ -23,12 +22,10 @@ class App extends Component {
                 <Chart />
                 <DateRange />
                 <ArticleList />
-                <Select options = {options} value = {this.state.selected} onChange = {this.handleChange} multi = {true}/>
+                <SelectFilter />
             </div>
         )
     }
-
-    handleChange = selected => this.setState({ selected })
 }
 
 export default App
